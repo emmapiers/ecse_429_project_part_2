@@ -61,7 +61,7 @@ Feature: Making sure responses can be received in xml format
     Then the server responds with <statusCode>
   
   Examples:
-    | titleToAdd     | descriptionToAdd   | doneStatusToAdd | header                | statusCode | requestedFormat |
-    | Title 1        | desc. 1            | false           | application/invalid   | 406        | xml             |
+    | titleToAdd     | descriptionToAdd   | doneStatusToAdd | header                | statusCode | 
+    | Title 1        | desc. 1            | false           | application/invalid   | 406        | 
    
  
