@@ -9,7 +9,7 @@ url2 = "http://localhost:4567"
 #Run in sequential order
 def before_all(context):
     print("========================================================================================================================")
-    print("Running scenarios and examples in random order:")
+    print("Running scenarios and examples in sequential order:")
     i = 1
     for feature in context._runner.features:  
         for scenario in feature.scenarios:
@@ -17,7 +17,7 @@ def before_all(context):
             print(f"    SCENARIO: {scenario.name} from feature")
             i = i+1
             for example in scenario.examples:
-                print(f"       Random Example Order: {example.table.rows}")
+                print(f"       Example Order: {example.table.rows}")
                 print("========================================================================================================================")
 '''
 #Run in random order
